@@ -97,6 +97,7 @@ public class Snake extends JPanel {
         for (int i = bodyParts; i > 0; i--) {
             if (XPositions[0] == XPositions[i] && YPositions[0] == YPositions[i]) {
                 isSnakeRunning = false;
+                break;
             }
         }
         if (XPositions[0] < 0) isSnakeRunning = false;
